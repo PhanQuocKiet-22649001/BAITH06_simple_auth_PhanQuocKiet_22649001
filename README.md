@@ -11,3 +11,24 @@ File Basic_auth.js
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/89b29ee4-f5a6-47e5-a44b-db40e2a027a5" />
 -khi ta nhập sai username hoặc password thì sẽ login thất bại và có thông báo "Access denied." HTTP Status 403
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c4efc764-8653-447a-8a74-dbd2cfd89cbe" />
+
+
+File Cookie_auth.js
+
+- trước tiên tải mongoose, cookie-parser
+- chạy file File Cookie_auth.js
+- với phương thức POST Route "/login" chọn vào tab body, chọn raw và nhập
+{
+  "username": "admin",
+  "password": "12345"
+
+} 
+- Kết quả trả về là "Logged in!"
+- Postman lưu lại cookie
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f6874e5a-8faf-435d-82b9-ba0b23d44d8f" />
+
+- Server gửi cookie auth_cookie_token về.
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/a1bb0f03-b607-4868-8b2a-8e49c39949c4" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/88430976-fe58-4b5a-95ca-36e8c587eab8" />
+
+
